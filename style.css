@@ -1,11 +1,11 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
 
 @font-face {
-  font-family: "Inter"; 
-  src: url("./Inter-VariableFont_opsz\,wght.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
-} 
+  font-family: "Inter";
+  src: url("./Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 
 :root {
   --width-all-content: clamp(310px, 90svw, 640px);

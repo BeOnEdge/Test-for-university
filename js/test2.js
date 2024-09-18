@@ -125,8 +125,8 @@ function result() {
   const minOk = MAX_nq * 2 - 11;
   document.getElementById("picture").innerHTML =
     res > minOk
-    ? '<div style="color:#239704; font-size: 20px; margin-top: 30px">Вы прошли тест!</div>'
-    : '<div style="color:#FF0000; font-size: 20px; margin-top: 30px">Вы не прошли тест!</div>';
+      ? '<div style="color:#239704; font-size: 20px; margin-top: 30px">Вы прошли тест!</div>'
+      : '<div style="color:#FF0000; font-size: 20px; margin-top: 30px">Вы не прошли тест!</div>';
 
   res = 0;
   nq = 0;
