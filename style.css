@@ -1,0 +1,308 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+
+@font-face {
+  font-family: "Inter"; 
+  src: url("./Inter-VariableFont_opsz\,wght.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+:root {
+  --width-all-content: clamp(310px, 90svw, 640px);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 16px;
+  overflow: hidden;
+}
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #f24645, #4f00bc);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.test {
+  overflow-y: auto;
+  height: 90.5svh;
+  position: relative;
+  z-index: 10;
+  margin: 3svh auto;
+  background-color: #fff;
+  max-width: var(--width-all-content);
+  border-radius: 20px;
+  padding: 40px 40px;
+  user-select: none;
+}
+.test_title {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 44px;
+  margin: 0;
+}
+.test_subtitle {
+  margin: 30px 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.test_form-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.test_form-name input {
+  padding: 15px 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  font-size: 16px;
+}
+.question-block__item-quantity {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  right: 5svw;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.question-block__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.task-block {
+  margin-bottom: 20px;
+}
+.task-block__question {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.task-block__question center {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.task-block__question br {
+  display: none;
+}
+.task-block__answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+.task-block__answers button {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+  padding: 3px 15px;
+}
+.task-block__answers button:hover {
+  color: #fff;
+  background-color: #1d7fb3;
+  box-shadow: 0px -1px 10px 0px rgba(34, 60, 80, 0.2);
+}
+.link-last_qw {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1d7fb3;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.btn_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.ivgu_logo {
+  max-width: clamp(90px, 27svw, 135px);
+}
+
+.last_qw {
+  margin: 30px 0;
+}
+.last_qw-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.correct-answer {
+  display: flex;
+  justify-content: space-between;
+}
+.correct-answer_hide {
+  text-decoration: none;
+  color: #1d7fb3;
+}

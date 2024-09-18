@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест по символьным вычислениям</title>
+    <script>
+      var MAX_nq = 10; // Number of questions for student
+      var minOk = MAX_nq * 2 - 11; // minimal result for "Ok"
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./js/for-background/ajax-jquery-3.1.0.js"></script>
+    <script defer src="./js/for-background/particles.js"></script>
+    <script async src="./js/blockDevTools.js"></script>
+    <script defer src="./js/background.js"></script>
+    <script src="./js/test2.js"></script>
+    <script src="./js/maxima.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <section class="test">
+      <h1 class="test_title">Тест по символьным вычислениям</h1>
+      <p class="test_subtitle">
+        Откройте в другом окне &laquo;Maxima&raquo;-у и ответьте на вопросы.
+      </p>
+
+      <script>
+        document.write(stbl_main);
+      </script>
+      <div class="btn_logo">
+        <div>
+          <a class="link-last_qw" href="javascript: displ('last_qw')"
+            >Последний вопрос</a
+          >
+
+          <div class="last_qw" id="last_qw" style="display: none">
+            <div class="last_qw-wrapper">
+              <span class="text-last-qw">Последний вопрос:</span>
+              <span class="task-block__question" id="last_q"></span>
+            </div>
+            <div class="correct-answer">
+              <div>
+                <span>Верный ответ:</span>
+                <span id="last_a"></span>
+              </div>
+              <a class="correct-answer_hide" href="javascript: displ('last_qw')"
+                >Cкрыть</a
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          class="ivgu_logo"
+          src="http://ivanovo.ac.ru/upload/logoIVSU.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="question-block__item-quantity">
+      Вопрос: <span id="nquest">0</span>
+    </div>
+    <script>
+      random_task();
+    </script>
+  </body>
+</html>
